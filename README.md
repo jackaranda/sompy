@@ -14,6 +14,9 @@ pip install netCDF4
 ### Example usage
 
 ```
+# Import module
+from sompy import SOM
+
 # Create a SOM with 5 x 4 nodes
 som = SOM(5,4)
 
