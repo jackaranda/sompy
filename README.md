@@ -13,7 +13,7 @@ pip install netCDF4
 
 ### Example usage
 
-```
+```python
 # Import module
 from sompy import SOM
 
