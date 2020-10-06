@@ -1,3 +1,6 @@
+## WARNING, this is probably broken at the moment!!!
+####################################################
+
 import netCDF4
 import numpy as np
 #matplotlib.use('cairo')
