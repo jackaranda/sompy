@@ -38,8 +38,8 @@ class SOM(object):
 
 		self.nodes = np.random.randn(*(self.shape + self.samples_shape))
 
-		#self.nodes += mean
-		#self.nodes *= std
+		self.nodes += mean
+		self.nodes *= std
 
 
 	def closest(self, sample):
@@ -194,7 +194,6 @@ class SOM(object):
 		
 		>>> som = SOM.fromfile('test.nc')
 		>>> samples = np.random.randn(1000,2)
-		>>> som.randinit(samples)
 		>>> nodes, errors = som.map(samples)
 		"""
 
