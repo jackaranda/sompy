@@ -1,3 +1,2 @@
-====
-Python SOM class and command line code
-===
+# Python implementation of Self Organizing Map clustering
+
