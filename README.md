@@ -38,5 +38,11 @@ som.save('test.nc')
 som = SOM.fromfile('test.nc')
 samples = np.random.randn(1000,2)
 nodes, errors = som.map(samples)
-
 ```
+## Sample data
+
+The data that is being clustered or categorized is called sample data.  Sample data can be used to "train" or fit the SOM using the ```SOM.fit(...)``` method.  Sample data can be mapped or categorized using the ```SOM.map(samples)``` method.  Sample data needs to be numpy ndarray with numeric values so that numeric functions can be performed.  
+
+## Initializing
+
+Creating a new instance just requires specifying the shape of the SOM.  So to create a 5 x 4 SOM just use ```mysom = SOM(5,4)```.  This doesn't actually do much except create the new instance and set the shape.  At this point the SOM knows nothing about any sample data.
